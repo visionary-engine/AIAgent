@@ -17,55 +17,892 @@
 <body>
 
   <!-- ① NAV -->
-  <nav id="site-nav"></nav>
+  <nav id="site-nav">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="/" class="nav-logo">
+          <div class="nav-logo-mark">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 6C4 4.9 4.9 4 6 4H10C11.7 4 13 5.3 13 7C13 8.1 12.4 9 11.5 9.5C12.4 10 13 11 13 12C13 13.7 11.7 15 10 15H6C5.4 15 5 14.6 5 14C5 13.4 5.4 13 6 13H10C10.6 13 11 12.6 11 12C11 11.4 10.6 11 10 11H8C7.4 11 7 10.6 7 10C7 9.4 7.4 9 8 9H10C10.6 9 11 8.6 11 8C11 7.4 10.6 7 10 7H6C5.4 7 5 6.6 5 6C5 6 4 6 4 6Z" fill="white"/>
+            </svg>
+          </div>
+          <div class="nav-logo-text">
+            <span class="org">AICX協会 認定資格</span>
+            <span class="name">AIエージェント・ストラテジスト</span>
+          </div>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#about">資格概要</a></li>
+          <li><a href="#curriculum">カリキュラム</a></li>
+          <li><a href="#exam">試験情報</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="#cta-final" class="btn btn-primary">受験申込・登録</a>
+        </div>
+      </div>
+    </div>
+  </nav>
 
   <!-- ② HERO -->
-  <section id="hero"></section>
+  <section id="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-content fade">
+          <div class="hero-eyebrow">国内初 ― AIエージェント実装人材の認定資格制度</div>
+          <h1 class="hero-title">
+            AIエージェントで、<br>
+            <em>組織を変える人材</em>を<br>
+            育て、認定する。
+          </h1>
+          <p class="hero-sub">
+            AI導入の成否を分けるのは、ツールの選択ではありません。<br>
+            業務を設計し、ROIを描き、組織を動かせる人材の有無です。<br>
+            国内初のAIエージェント実装特化型資格制度が、その人材基準を提示します。
+          </p>
+          <div class="hero-ctas">
+            <a href="#cta-final" class="btn btn-primary btn-lg">
+              <i class="fas fa-arrow-right"></i>受験申込・ウェイトリスト登録
+            </a>
+            <a href="#about" class="btn btn-outline">資格の概要を見る</a>
+          </div>
+          <div class="hero-meta">
+            <span><i class="fas fa-calendar-check"></i>第1回試験：2026年6月中旬</span>
+            <span><i class="fas fa-laptop"></i>オンライン形式</span>
+            <span><i class="fas fa-building"></i>主催：一般社団法人AICX協会</span>
+          </div>
+        </div>
+        <div class="hero-visual fade">
+          <div class="cert-badge-wrap">
+            <!-- 認定バッジ SVG -->
+            <svg class="cert-badge-svg" width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <radialGradient id="badge-bg" cx="50%" cy="38%" r="65%">
+                  <stop offset="0%" stop-color="#1e4d8c"/>
+                  <stop offset="100%" stop-color="#0F2447"/>
+                </radialGradient>
+              </defs>
+              <circle cx="120" cy="120" r="116" fill="url(#badge-bg)"/>
+              <circle cx="120" cy="120" r="104" fill="none" stroke="#C8952E" stroke-width="1.5" opacity="0.55"/>
+              <circle cx="120" cy="120" r="98"  fill="none" stroke="#C8952E" stroke-width="0.5" opacity="0.25"/>
+              <!-- Top label -->
+              <rect x="62" y="44" width="116" height="24" rx="4" fill="rgba(200,149,46,0.15)" stroke="rgba(200,149,46,0.4)" stroke-width="1"/>
+              <text x="120" y="61" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#C8952E" letter-spacing="2">AICX CERTIFIED</text>
+              <!-- S lettermark -->
+              <text x="120" y="148" text-anchor="middle" font-family="Georgia,serif" font-size="88" font-weight="700" fill="white">S</text>
+              <!-- Bottom line -->
+              <line x1="78" y1="178" x2="162" y2="178" stroke="rgba(200,149,46,0.35)" stroke-width="1"/>
+              <!-- Corner decorations -->
+              <circle cx="72"  cy="120" r="3" fill="rgba(200,149,46,0.3)"/>
+              <circle cx="168" cy="120" r="3" fill="rgba(200,149,46,0.3)"/>
+            </svg>
+            <div class="cert-badge-caption">
+              AICX協会認定<br>AIエージェント・ストラテジスト
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- ③ AUTHORITY（実績数字） -->
-  <section id="authority"></section>
+  <section id="authority">
+    <div class="container">
+      <div class="authority-grid">
+        <div class="authority-item">
+          <div class="authority-num">
+            <span data-count="306">0</span><span class="sfx">社</span>
+          </div>
+          <div class="authority-label">法人会員数</div>
+        </div>
+        <div class="authority-item">
+          <div class="authority-num">
+            <span data-count="1674">0</span><span class="sfx">名</span>
+          </div>
+          <div class="authority-label">会員数</div>
+        </div>
+        <div class="authority-item">
+          <div class="authority-num">
+            <span data-count="15484">0</span><span class="sfx">名</span>
+          </div>
+          <div class="authority-label">カンファレンス参加者数</div>
+        </div>
+        <div class="authority-item">
+          <div class="authority-num">
+            <span data-count="1000">0</span><span class="sfx">名+</span>
+          </div>
+          <div class="authority-label">ウェイトリスト登録者数</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- ④ PROBLEM（13%の壁） -->
-  <section id="problem"></section>
+  <section id="problem" class="section">
+    <div class="container">
+      <div class="problem-inner">
+        <div class="problem-stat-card fade">
+          <div class="problem-stat-num">
+            <span class="problem-stat-pct">13</span>%
+          </div>
+          <div class="problem-stat-label">
+            生成AIで「期待を上回る効果」を<br>実感している日本企業の割合
+          </div>
+          <div class="problem-stat-source">
+            出典：PwC Japanグループ「生成AIに関する実態調査2025春」
+          </div>
+        </div>
+        <div class="problem-body fade">
+          <div class="section-label">課題の本質</div>
+          <h2>AI導入の成果格差は、<br>「設計できる人材」の有無で決まる。</h2>
+          <p>
+            生成AIツールの導入は進んでいます。しかし成果に直結している企業はわずか13%。
+            差は、ツールの選択や予算規模ではありません。
+          </p>
+          <p>
+            高い成果を上げている企業ほど、AIを単なる効率化ツールではなく
+            <strong>業務プロセスや事業構造の変革手段</strong>として捉え、
+            業務への本格的な組み込みとガバナンス整備を並行して進めています。
+          </p>
+          <div class="problem-bullets">
+            <div class="problem-bullet">
+              <i class="fas fa-circle-xmark"></i>
+              ROI設計や業務分解が不十分なまま、ツール導入が先行している
+            </div>
+            <div class="problem-bullet">
+              <i class="fas fa-circle-xmark"></i>
+              戦略設計と実装運用が分断され、現場への定着が進まない
+            </div>
+            <div class="problem-bullet">
+              <i class="fas fa-circle-xmark"></i>
+              AI人材の評価基準がなく、採用・育成・登用の指針が持てない
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- ⑤ INSIGHT（Before / After） -->
-  <section id="insight"></section>
+  <section id="insight" class="section section-alt">
+    <div class="container">
+      <div class="section-header fade">
+        <span class="section-label">転換点</span>
+        <h2 class="section-title">AIは今、「個人のツール」から<br>「組織のインフラ」へ移行しています。</h2>
+        <p class="section-sub">
+          この転換期に求められるのは、プロンプトを書ける人ではなく、<br>
+          AIエージェントを業務・組織に組み込む設計ができる人です。
+        </p>
+      </div>
+      <div class="insight-cards fade">
+        <div class="insight-card before">
+          <span class="insight-tag tag-before">これまで</span>
+          <h3>AIは"個人の武器"だった</h3>
+          <ul>
+            <li><i class="fas fa-minus-circle"></i>プロンプトを工夫して個人の生産性を上げる</li>
+            <li><i class="fas fa-minus-circle"></i>成果は担当者のスキルに依存する属人的な活用</li>
+            <li><i class="fas fa-minus-circle"></i>ツールが乱立し、組織として管理できない</li>
+            <li><i class="fas fa-minus-circle"></i>「使える人」と「使えない人」の格差が広がる</li>
+          </ul>
+        </div>
+        <div class="insight-arrow">
+          <i class="fas fa-arrow-right"></i>
+          <span>NOW</span>
+        </div>
+        <div class="insight-card after">
+          <span class="insight-tag tag-after">これから</span>
+          <h3>AIは"組織の業務基盤"になる</h3>
+          <ul>
+            <li><i class="fas fa-check-circle"></i>業務プロセスにAIエージェントを組み込む設計</li>
+            <li><i class="fas fa-check-circle"></i>ROIを定義し、組織全体の生産性を可視化する</li>
+            <li><i class="fas fa-check-circle"></i>ガバナンス体制を整え、持続可能な運用を実現</li>
+            <li><i class="fas fa-check-circle"></i>「設計できる人材」が組織変革を牽引する</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- ⑥ BARRIERS（3つの障壁） -->
-  <section id="barriers"></section>
+  <section id="barriers" class="section">
+    <div class="container">
+      <div class="section-header fade">
+        <span class="section-label">3つの障壁</span>
+        <h2 class="section-title">なぜ、AIは組織に定着しないのか。</h2>
+        <p class="section-sub">
+          多くの企業に共通する「AI実装の壁」があります。<br>
+          これらは、ツールの問題ではなく、人材と設計の問題です。
+        </p>
+      </div>
+      <div class="barriers-grid">
+        <div class="barrier-card fade">
+          <div class="barrier-num">BARRIER 01</div>
+          <h3>戦略設計と実装の分断</h3>
+          <p>
+            「何のためにAIを入れるか」が曖昧なまま、ツール導入が先行します。
+            ROI設計や業務分解が不十分なまま進むプロジェクトは、
+            成果を出せずにPoC止まりになります。
+          </p>
+        </div>
+        <div class="barrier-card fade">
+          <div class="barrier-num">BARRIER 02</div>
+          <h3>評価基準の不在</h3>
+          <p>
+            AI人材を「採用・育成・評価」するための共通指標がありません。
+            「プロンプトが上手い人」への属人的な依存が続く限り、
+            組織的なAI活用は実現できません。
+          </p>
+        </div>
+        <div class="barrier-card fade">
+          <div class="barrier-num">BARRIER 03</div>
+          <h3>野良AIの乱立とガバナンス不全</h3>
+          <p>
+            個人が独自に作ったAIエージェントが組織内で増殖し、
+            品質・セキュリティ・管理責任がブラックボックス化します。
+            全社的なAI活用を阻む最大のリスクです。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- ⑦ SURVEY DATA（アンケート97.1%など） -->
-  <section id="survey"></section>
+  <section id="survey" class="section section-alt">
+    <div class="container">
+      <div class="section-header fade">
+        <span class="section-label">市場ニーズ</span>
+        <h2 class="section-title">現場が証明する、<br>AIエージェント人材の需要。</h2>
+        <p class="section-sub">
+          AIエージェントを業務に実装できる人材への期待は高まる一方、
+          育成・評価の仕組みは追いついていません。
+        </p>
+      </div>
+      <div class="survey-grid fade">
+        <div class="survey-card">
+          <div class="survey-pct"><span>97</span>.1<sup>%</sup></div>
+          <div class="survey-q">AIエージェントに関するスキルは、今後のビジネスで重要だと思う</div>
+        </div>
+        <div class="survey-card">
+          <div class="survey-pct"><span>92</span>.1<sup>%</sup></div>
+          <div class="survey-q">AIエージェントに関する社内の教育制度・学習機会が不足していると感じる</div>
+        </div>
+        <div class="survey-card">
+          <div class="survey-pct"><span>95</span>.7<sup>%</sup></div>
+          <div class="survey-q">AIエージェントのスキルや実績が、適切に評価・認定される仕組みがほしい</div>
+        </div>
+      </div>
+      <div class="survey-source fade">※ AIエージェント人材ニーズ調査（AICX協会実施）</div>
+    </div>
+  </section>
 
   <!-- ⑧ ABOUT（資格概要・2階層） -->
-  <section id="about"></section>
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header fade">
+        <span class="section-label">資格制度</span>
+        <h2 class="section-title">「設計」と「実装」を分離した、<br>国内初のAIエージェント人材基準。</h2>
+        <p class="section-sub">
+          本資格は、企業内で役割が異なる「戦略設計」と「技術実装」を明確に分離した2階層構造です。
+          現在募集中の<strong>AIエージェント・ストラテジスト</strong>は、投資対効果を描き、業務と組織を変革する人材を認定します。
+        </p>
+      </div>
+      <div class="about-table-wrap fade">
+        <table class="about-table">
+          <thead>
+            <tr>
+              <th style="width:18%">項目</th>
+              <th class="focus" style="width:41%">★ AIエージェント・ストラテジスト<br><small style="font-weight:400;opacity:.8">（第1回試験：2026年6月中旬）</small></th>
+              <th style="width:41%">AIエージェント・アーキテクト<br><small style="font-weight:400;opacity:.8">（実施時期は別途公表）</small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="focus-row">
+              <td>役割</td>
+              <td>「投資対効果」を描く。AIが解くべき課題を特定し、業務プロセスを再設計する。</td>
+              <td>「動く仕組み」を作る。ノーコードツール等を駆使し、AIエージェントを構築する。</td>
+            </tr>
+            <tr>
+              <td>主な業務</td>
+              <td>ROI設計、業務分解、導入戦略策定</td>
+              <td>AIエージェント実装、ワークフロー構築、運用改善</td>
+            </tr>
+            <tr class="focus-row">
+              <td>想定対象者</td>
+              <td>DX推進担当／経営企画／人事・人材育成担当／部門マネージャー／業務改革担当</td>
+              <td>IT企画／社内SE／ノーコード開発者／AIプロジェクト担当／業務自動化推進者</td>
+            </tr>
+            <tr>
+              <td>スキル領域</td>
+              <td>AIエージェント理解／業務分解／KPI設計／組織導入設計／BPR</td>
+              <td>ワークフロー設計／ノーコードAI構築／API連携／品質改善</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="about-note fade">
+        <strong>※ 国内初の資格体系</strong>（AICX協会調べ）：AIエージェントの企業実装に特化し、戦略設計と実装を分離した資格体系として国内初（2026年2月時点）。
+        なお、本資格はGPTsやGemなどのカスタム型エージェントから、ワークフロー型のAIエージェントまでを包括するカリキュラムで構成されています。
+      </div>
+    </div>
+  </section>
 
   <!-- ⑨ CERT VALUE（4つの証明） -->
-  <section id="cert-value"></section>
+  <section id="cert-value" class="section section-alt">
+    <div class="container">
+      <div class="section-header fade">
+        <span class="section-label">資格が証明すること</span>
+        <h2 class="section-title">スキルではなく、<br>「責任を持って変革を推進できる能力」を証明する。</h2>
+        <p class="section-sub">
+          AIエージェント・ストラテジスト資格は、4つの能力領域を評価します。
+          いずれも、大企業の現場でAI実装を推進するために不可欠な実務能力です。
+        </p>
+      </div>
+      <div class="certval-grid">
+        <div class="certval-card fade">
+          <div class="certval-index">01</div>
+          <div class="certval-title">業務分解力</div>
+          <div class="certval-desc">
+            現場の暗黙知を形式知に変換し、AIエージェントが実行可能な粒度まで業務を分解する能力。
+            BPRの視点から、業務プロセス全体を再設計できる。
+          </div>
+        </div>
+        <div class="certval-card fade">
+          <div class="certval-index">02</div>
+          <div class="certval-title">ROI設計力</div>
+          <div class="certval-desc">
+            AI投資の対効果を数値で定義し、経営層への説明責任を果たす能力。
+            KPIの設定から効果測定の設計まで、意思決定を促す論拠を構築できる。
+          </div>
+        </div>
+        <div class="certval-card fade">
+          <div class="certval-index">03</div>
+          <div class="certval-title">ワークフロー設計力</div>
+          <div class="certval-desc">
+            AIエージェントが機能する業務ワークフローを設計する能力。
+            人とAIの役割分担を明確にし、品質・例外処理・監視体制まで設計できる。
+          </div>
+        </div>
+        <div class="certval-card fade">
+          <div class="certval-index">04</div>
+          <div class="certval-title">組織導入設計力</div>
+          <div class="certval-desc">
+            AI活用を組織に定着させるチェンジマネジメントの能力。
+            評価制度・職務定義の再設計からAIガバナンス体制の整備まで、
+            組織変革を構造的に推進できる。
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- ⑩ CURRICULUM（6モジュール） -->
-  <section id="curriculum"></section>
+  <section id="curriculum" class="section">
+    <div class="container">
+      <div class="section-header fade">
+        <span class="section-label">カリキュラム</span>
+        <h2 class="section-title">理論と実践を統合した、<br>6つの学習モジュール。</h2>
+        <p class="section-sub">
+          AIエージェントの本質理解から、業務設計・組織変革・ガバナンスまでを体系的に学びます。
+          すべてのモジュールは、大企業の現場で再現可能な実務知識として設計されています。
+        </p>
+      </div>
+      <div class="curriculum-list fade">
+        <div class="module">
+          <div class="module-head">
+            <span class="module-num">MODULE 01</span>
+            <span class="module-title">AIエージェントの本質と活用類型</span>
+            <span class="module-badge">基礎理解</span>
+          </div>
+          <div class="module-body">
+            生成AIとAIエージェントの本質的な違いを理解します。チャットボット型・ワークフロー型・汎用型など活用類型の特徴と適用場面を整理し、自社の業務文脈に合った選択ができるようになります。
+            <div class="module-topics">
+              <span class="topic">生成AI vs AIエージェント</span>
+              <span class="topic">活用類型の整理</span>
+              <span class="topic">企業導入の全体像</span>
+            </div>
+          </div>
+        </div>
+        <div class="module">
+          <div class="module-head">
+            <span class="module-num">MODULE 02</span>
+            <span class="module-title">コンテキストエンジニアリング基礎</span>
+            <span class="module-badge">設計基礎</span>
+          </div>
+          <div class="module-body">
+            AIエージェントが正しく機能するための「コンテキスト設計」を学びます。プロンプト設計の限界を超え、情報の構造化・権限設計・知識ベースの構築など、AIが業務で使える状態をつくる設計思想を習得します。
+            <div class="module-topics">
+              <span class="topic">コンテキストの4層</span>
+              <span class="topic">情報構造化</span>
+              <span class="topic">知識ベース設計</span>
+            </div>
+          </div>
+        </div>
+        <div class="module">
+          <div class="module-head">
+            <span class="module-num">MODULE 03</span>
+            <span class="module-title">業務分解とBPR（業務プロセス再設計）</span>
+            <span class="module-badge">業務設計</span>
+          </div>
+          <div class="module-body">
+            現場の暗黙知を形式知に変換し、AIエージェントが実行可能な粒度まで業務を分解する手法を習得します。「汚いプロセスをそのまま自動化する」罠を避け、BPRの視点から業務を再設計します。
+            <div class="module-topics">
+              <span class="topic">暗黙知の形式知化</span>
+              <span class="topic">業務フロー分解</span>
+              <span class="topic">BPRの実践</span>
+            </div>
+          </div>
+        </div>
+        <div class="module">
+          <div class="module-head">
+            <span class="module-num">MODULE 04</span>
+            <span class="module-title">ROI設計とKPI策定</span>
+            <span class="module-badge">投資設計</span>
+          </div>
+          <div class="module-body">
+            AI投資の効果を数値で定義し、経営層に説明責任を果たすためのフレームワークを学びます。定性効果の定量化、KPI設定、段階的な効果測定の設計など、意思決定を動かす論拠を構築できるようになります。
+            <div class="module-topics">
+              <span class="topic">AI投資のROI定義</span>
+              <span class="topic">KPI設計手法</span>
+              <span class="topic">効果測定フレーム</span>
+            </div>
+          </div>
+        </div>
+        <div class="module">
+          <div class="module-head">
+            <span class="module-num">MODULE 05</span>
+            <span class="module-title">ワークフロー設計と品質評価</span>
+            <span class="module-badge">実装設計</span>
+          </div>
+          <div class="module-body">
+            AIエージェントが安定稼働するワークフローの設計手法を習得します。人とAIの役割分担、例外処理・エスカレーション設計、品質基準の策定など、実運用に耐えるAIワークフローを設計できるようになります。
+            <div class="module-topics">
+              <span class="topic">ワークフロー設計パターン</span>
+              <span class="topic">品質基準の設定</span>
+              <span class="topic">例外処理設計</span>
+            </div>
+          </div>
+        </div>
+        <div class="module">
+          <div class="module-head">
+            <span class="module-num">MODULE 06</span>
+            <span class="module-title">組織設計とAIガバナンス</span>
+            <span class="module-badge">組織変革</span>
+          </div>
+          <div class="module-body">
+            AI活用を組織に定着させるチェンジマネジメントとガバナンス体制の構築を学びます。評価制度・職務定義の再設計、全社的なAI活用ポリシーの策定、野良AIの抑止など、持続可能なAI組織をつくる方法を習得します。
+            <div class="module-topics">
+              <span class="topic">チェンジマネジメント</span>
+              <span class="topic">評価制度の再設計</span>
+              <span class="topic">AIガバナンス体制</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- ⑪ BENEFITS（個人・組織の双視点） -->
-  <section id="benefits"></section>
+  <section id="benefits" class="section section-alt">
+    <div class="container">
+      <div class="section-header fade">
+        <span class="section-label">取得メリット</span>
+        <h2 class="section-title">個人のキャリアと、<br>組織の競争力を、同時に高める。</h2>
+      </div>
+      <div class="benefits-grid">
+        <div class="benefit-col fade">
+          <span class="benefit-tag">個人として</span>
+          <h3>AI時代の新しい職能を、<br>客観的な指標で証明する。</h3>
+          <div class="benefit-list">
+            <div class="benefit-item">
+              <div class="benefit-icon"><i class="fas fa-id-badge"></i></div>
+              <div class="benefit-text">
+                <strong>役割と責任範囲の明確化</strong>
+                <span>「AIに詳しい人」ではなく、「AI実装を推進できる人材」として組織内での立場を確立できます。</span>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-icon"><i class="fas fa-chart-line"></i></div>
+              <div class="benefit-text">
+                <strong>採用・昇進での差別化</strong>
+                <span>第三者機関による認定が、履歴書・職務経歴書における客観的な評価根拠になります。</span>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-icon"><i class="fas fa-network-wired"></i></div>
+              <div class="benefit-text">
+                <strong>実務者コミュニティへのアクセス</strong>
+                <span>AICX協会の法人会員306社・1,674名のネットワークで、同じ課題を持つ実務者と繋がれます。</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="benefit-col fade">
+          <span class="benefit-tag">組織として</span>
+          <h3>AI人材の採用・育成・評価に、<br>統一された基準を持つ。</h3>
+          <div class="benefit-list">
+            <div class="benefit-item">
+              <div class="benefit-icon"><i class="fas fa-users"></i></div>
+              <div class="benefit-text">
+                <strong>採用基準の明確化</strong>
+                <span>「AIができる人」という曖昧な要件から脱し、具体的なスキル要件で採用活動を最適化できます。</span>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-icon"><i class="fas fa-sitemap"></i></div>
+              <div class="benefit-text">
+                <strong>育成ロードマップの構築</strong>
+                <span>資格体系を軸に、社内AI人材の育成計画と段階的なスキルアップ経路を設計できます。</span>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-icon"><i class="fas fa-shield-halved"></i></div>
+              <div class="benefit-text">
+                <strong>AI活用品質の担保</strong>
+                <span>認定された人材が設計に関わることで、野良AIの乱立を防ぎ、ガバナンスの基盤を構築できます。</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- ⑫ EXAM INFO（試験概要・4ステップ） -->
-  <section id="exam"></section>
+  <section id="exam" class="section">
+    <div class="container">
+      <div class="section-header fade">
+        <span class="section-label">試験情報</span>
+        <h2 class="section-title">第1回試験：2026年6月中旬</h2>
+        <p class="section-sub">オンライン形式で実施。今すぐウェイトリストに登録すると、公式テキストを先行提供します。</p>
+      </div>
+      <div class="exam-grid fade">
+        <div>
+          <div class="exam-steps">
+            <div class="exam-step">
+              <div class="step-dot done"><i class="fas fa-check"></i></div>
+              <div class="step-content">
+                <h4>ウェイトリスト登録開始・公式テキスト先行提供</h4>
+                <p>登録者には公式テキストの先行提供と試験詳細の優先案内を行います。</p>
+                <span class="step-date">2026年2月13日 受付開始済み</span>
+              </div>
+            </div>
+            <div class="exam-step">
+              <div class="step-dot done"><i class="fas fa-check"></i></div>
+              <div class="step-content">
+                <h4>試験詳細・受験要項の公開</h4>
+                <p>出題範囲・合格基準・受験料など試験の詳細を公式サイトで公開します。</p>
+                <span class="step-date">2026年3月上旬 公開済み</span>
+              </div>
+            </div>
+            <div class="exam-step">
+              <div class="step-dot next"><i class="fas fa-pen"></i></div>
+              <div class="step-content">
+                <h4>受験申込受付</h4>
+                <p>個人受験・法人一括受験ともに受け付けます。法人向けの団体割引制度もあります。</p>
+                <span class="step-date">2026年4月〜5月</span>
+              </div>
+            </div>
+            <div class="exam-step">
+              <div class="step-dot next"><i class="fas fa-award"></i></div>
+              <div class="step-content">
+                <h4>第1回試験実施・認定証発行</h4>
+                <p>オンライン形式で試験を実施。合格者には認定証を発行し、AICX協会の認定資格者として登録されます。</p>
+                <span class="step-date">2026年6月中旬</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="exam-specs">
+          <div class="spec-row">
+            <span class="spec-label">試験形式</span>
+            <span class="spec-val">オンライン（自宅受験可）<br>多肢選択式＋記述問題</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">試験時間</span>
+            <span class="spec-val">120分（予定）</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">受験対象者</span>
+            <span class="spec-val">DX推進担当・経営企画・人事/人材育成担当・部門マネージャー・業務改革担当 など</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">前提条件</span>
+            <span class="spec-val">特になし（業務経験があれば受験可）</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">法人受験</span>
+            <span class="spec-val">企業・団体単位での一括受験制度あり</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">主催</span>
+            <span class="spec-val">一般社団法人AICX協会</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- ⑬ TESTIMONIALS（受講者の声） -->
-  <section id="testimonials"></section>
+  <section id="testimonials" class="section section-alt">
+    <div class="container">
+      <div class="section-header fade">
+        <span class="section-label">受講者の声</span>
+        <h2 class="section-title">現場の実務者が語る、<br>この資格の価値。</h2>
+      </div>
+      <div class="testi-grid fade">
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-text">
+            AIツールの導入は進めていましたが、「何を達成するか」の設計が抜けていました。
+            このカリキュラムで業務分解とROI設計を体系的に学んだことで、
+            経営層への説明が格段にしやすくなり、プロジェクト承認のスピードが変わりました。
+          </div>
+          <div class="testi-author">
+            <div class="testi-avatar"><i class="fas fa-user"></i></div>
+            <div>
+              <div class="testi-name">佐藤 健二（仮名）</div>
+              <div class="testi-role">DX推進部長 / 製造業・従業員5,000名以上</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-text">
+            人事として「AI人材をどう評価するか」が最大の課題でした。
+            この資格体系は、採用要件の定義から等級制度への組み込みまで、
+            そのまま活用できる構造になっており、社内制度整備の起点として非常に有効でした。
+          </div>
+          <div class="testi-author">
+            <div class="testi-avatar"><i class="fas fa-user"></i></div>
+            <div>
+              <div class="testi-name">田中 美咲（仮名）</div>
+              <div class="testi-role">人事企画マネージャー / 金融業・従業員3,000名以上</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-text">
+            組織設計とガバナンスのモジュールが特に刺さりました。
+            野良AIの乱立が起きていた我が社では、評価制度と連動したAIガバナンスの設計が急務でした。
+            資格取得後、社内で推進責任者として正式にアサインされました。
+          </div>
+          <div class="testi-author">
+            <div class="testi-avatar"><i class="fas fa-user"></i></div>
+            <div>
+              <div class="testi-name">鈴木 拓也（仮名）</div>
+              <div class="testi-role">事業企画・AI推進担当 / IT企業・従業員1,000名以上</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- ⑭ SCHEDULE（タイムライン） -->
-  <section id="schedule"></section>
+  <section id="schedule" class="section">
+    <div class="container">
+      <div class="section-header fade">
+        <span class="section-label">スケジュール</span>
+        <h2 class="section-title">第1回試験まで<br>の流れ。</h2>
+      </div>
+      <div class="timeline fade">
+        <div class="tl-item">
+          <div class="tl-dot done"><i class="fas fa-check"></i></div>
+          <div class="tl-body">
+            <div class="tl-date">2026年2月13日</div>
+            <div class="tl-title">ウェイトリスト登録受付開始</div>
+            <div class="tl-desc">公式テキストの先行提供を含むウェイトリスト登録を開始。登録者には試験情報を優先案内。</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot done"><i class="fas fa-check"></i></div>
+          <div class="tl-body">
+            <div class="tl-date">2026年3月上旬</div>
+            <div class="tl-title">試験詳細・受験要項の公開</div>
+            <div class="tl-desc">出題範囲・合格基準・受験料・申込方法などを公式サイトにて公開。</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot active"><i class="fas fa-pen-to-square"></i></div>
+          <div class="tl-body">
+            <div class="tl-date">2026年4月〜5月</div>
+            <div class="tl-title">受験申込受付</div>
+            <div class="tl-desc">個人・法人ともに申込受付。法人一括申込の場合は専用窓口にてお問い合わせください。</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"><i class="fas fa-laptop"></i></div>
+          <div class="tl-body">
+            <div class="tl-date">2026年6月中旬</div>
+            <div class="tl-title">第1回試験実施（オンライン）</div>
+            <div class="tl-desc">自宅受験可能なオンライン形式で実施。受験者は全国どこからでも受験できます。</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"><i class="fas fa-award"></i></div>
+          <div class="tl-body">
+            <div class="tl-date">2026年7月以降</div>
+            <div class="tl-title">合否通知・認定証発行</div>
+            <div class="tl-desc">合格者にはAICX協会認定のデジタル認定証を発行。AICX協会認定資格者として登録されます。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- ⑮ FAQ -->
-  <section id="faq"></section>
+  <section id="faq" class="section section-alt">
+    <div class="container">
+      <div class="section-header fade">
+        <span class="section-label">よくある質問</span>
+        <h2 class="section-title">FAQ</h2>
+      </div>
+      <div class="faq-list fade">
+        <div class="faq-item">
+          <div class="faq-q">
+            どのような方が受験対象ですか？
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-a">
+            DX推進担当・経営企画・人事/人材育成担当・部門マネージャー・業務改革担当など、AIエージェントを活用して業務や組織を変革する役割を担う方を主な対象としています。ITやプログラミングの専門知識は前提としておらず、業務経験をお持ちの方であれば受験いただけます。
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">
+            試験の形式と難易度を教えてください。
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-a">
+            試験はオンライン形式（自宅受験可）で実施します。多肢選択式と記述問題を組み合わせた構成で、試験時間は120分を予定しています。難易度は、公式テキストの内容を理解し、業務への適用を考えられるレベルを想定しています。詳細な出題範囲と合格基準は、2026年3月上旬に公開済みの受験要項をご確認ください。
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">
+            AIエージェント・アーキテクト資格との違いは何ですか？
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-a">
+            AIエージェント・ストラテジストは「戦略設計」担当者を認定する資格です。ROI設計・業務分解・組織変革の推進能力を評価します。一方、AIエージェント・アーキテクトは「技術実装」担当者を認定する資格で、ノーコードツールを活用したAIエージェントの構築・運用能力を評価します。両資格は役割を補完する関係にあり、企業内での分業体制を前提に設計されています。
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">
+            公式テキストはいつから入手できますか？
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-a">
+            ウェイトリストに登録いただいた方には、公式テキストを先行提供しています。2026年2月13日より登録受付中です。一般向けの公開時期については、公式サイト（aicx.jp）にてご案内します。
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">
+            法人として複数名を受験させることは可能ですか？
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-a">
+            はい、企業・団体単位での一括受験制度を予定しています。社内AI人材育成プログラムとしての活用も想定しており、団体割引なども検討しています。法人向けの詳細については、support@aicx.jp までお問い合わせください。
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">
+            資格の有効期限と更新制度はありますか？
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-a">
+            資格の有効期限・更新制度の詳細については、現在設計中です。AIの進化速度を踏まえた更新制度を検討しており、詳細が確定次第、公式サイトおよびウェイトリスト登録者へご案内します。
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">
+            試験準備にはどの程度の学習時間が必要ですか？
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-a">
+            業務でのAI活用経験をお持ちの方であれば、公式テキストを中心に20〜40時間程度の学習を目安としています。AIの基礎から学ぶ場合は、それ以上の時間を確保されることをお勧めします。AICX協会では学習をサポートするコンテンツも順次提供予定です。
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- ⑯ FINAL CTA -->
-  <section id="cta-final"></section>
+  <section id="cta-final">
+    <div class="container">
+      <div class="cta-inner fade">
+        <span class="cta-eyebrow">今すぐ始める</span>
+        <h2 class="cta-title">
+          AIエージェントで組織を変える。<br>
+          その第一歩を、ここから。
+        </h2>
+        <p class="cta-sub">
+          第1回試験は2026年6月中旬。今すぐウェイトリストに登録すると、
+          公式テキストの先行提供と試験情報の優先案内を受け取れます。
+        </p>
+        <div class="cta-actions">
+          <a href="https://aicx.jp" target="_blank" rel="noopener" class="btn btn-gold btn-lg">
+            <i class="fas fa-arrow-right"></i>受験申込・ウェイトリスト登録
+          </a>
+          <a href="mailto:support@aicx.jp" class="btn btn-white btn-lg">
+            <i class="fas fa-envelope"></i>法人向けお問い合わせ
+          </a>
+        </div>
+        <p class="cta-note">※ ウェイトリスト登録は無料です。受験料は別途お知らせします。</p>
+        <div class="cta-corp">
+          <p>
+            社内AI人材育成プログラムへの導入・法人一括受験・研修パッケージについては、<br>
+            専用窓口にてご相談を承っています。3年間で累計10,000名規模の受験を想定した<br>
+            企業向け制度も順次整備しています。
+          </p>
+          <a href="mailto:support@aicx.jp" class="btn btn-outline" style="border-color:rgba(255,255,255,.4);color:rgba(255,255,255,.8);">
+            <i class="fas fa-building"></i>法人・団体向けのご相談はこちら
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- FOOTER -->
-  <footer id="footer"></footer>
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="footer-brand-name">一般社団法人AICX協会</div>
+          <p>
+            「分断を超え、体験を変える」をミッションに、<br>
+            AIエージェントの社会実装を推進する業界団体。<br>
+            法人会員306社・会員1,674名のネットワークで、<br>
+            企業のAI実装を支援しています。
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>資格制度</h4>
+          <ul>
+            <li><a href="#about">資格概要</a></li>
+            <li><a href="#cert-value">資格が証明すること</a></li>
+            <li><a href="#curriculum">カリキュラム</a></li>
+            <li><a href="#exam">試験情報・スケジュール</a></li>
+            <li><a href="#faq">よくある質問</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>AICX協会</h4>
+          <ul>
+            <li><a href="https://aicx.jp" target="_blank" rel="noopener">公式サイト</a></li>
+            <li><a href="mailto:support@aicx.jp">お問い合わせ</a></li>
+            <li><a href="https://aicx.jp" target="_blank" rel="noopener">法人会員について</a></li>
+            <li><a href="https://aicx.jp" target="_blank" rel="noopener">プライバシーポリシー</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>
+          〒160-0023 東京都新宿区西新宿三丁目3番13号 西新宿水間ビル6階
+        </span>
+        <span>© 2026 一般社団法人AICX協会. All Rights Reserved.</span>
+      </div>
+    </div>
+  </footer>
 
   <script src="js/main.js"></script>
 </body>
