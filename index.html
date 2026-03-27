@@ -13,8 +13,76 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    #pw-gate {
+      position: fixed; inset: 0; z-index: 9999;
+      background: #0F2447;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Noto Sans JP', sans-serif;
+    }
+    #pw-gate.hidden { display: none; }
+    .pw-box {
+      background: #fff;
+      border-radius: 12px;
+      padding: 48px 40px;
+      width: 100%; max-width: 400px;
+      text-align: center;
+      margin: 16px;
+    }
+    .pw-logo {
+      width: 44px; height: 44px;
+      background: #1A3A6B; border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 16px;
+      color: #fff; font-size: 1.2rem; font-weight: 700;
+    }
+    .pw-title { font-size: 1rem; font-weight: 700; color: #0F2447; margin-bottom: 6px; }
+    .pw-sub { font-size: .82rem; color: #64748B; margin-bottom: 28px; }
+    .pw-input {
+      width: 100%; padding: 12px 16px;
+      border: 1.5px solid #E2E8F0; border-radius: 6px;
+      font-size: .95rem; margin-bottom: 12px;
+      outline: none; font-family: inherit;
+    }
+    .pw-input:focus { border-color: #1A3A6B; }
+    .pw-btn {
+      width: 100%; padding: 13px;
+      background: #1A3A6B; color: #fff;
+      border: none; border-radius: 6px;
+      font-size: .95rem; font-weight: 700;
+      cursor: pointer; font-family: inherit;
+    }
+    .pw-btn:hover { background: #0F2447; }
+    .pw-error {
+      font-size: .82rem; color: #dc2626;
+      margin-top: 10px; display: none;
+    }
+  </style>
 </head>
 <body>
+
+  <!-- パスワードゲート -->
+  <div id="pw-gate">
+    <div class="pw-box">
+      <div class="pw-logo">S</div>
+      <div class="pw-title">AIエージェント・ストラテジスト</div>
+      <div class="pw-sub">プレビューページです。パスワードを入力してください。</div>
+      <input id="pw-input" class="pw-input" type="password" placeholder="パスワード" autocomplete="off">
+      <button class="pw-btn" onclick="checkPw()">入る</button>
+      <div id="pw-error" class="pw-error">パスワードが違います</div>
+    </div>
+  </div>
+  <script>
+    (function(){
+      if(sessionStorage.getItem('lp_auth')==='1') document.getElementById('pw-gate').classList.add('hidden');
+      document.getElementById('pw-input').addEventListener('keydown',function(e){if(e.key==='Enter')checkPw();});
+    })();
+    function checkPw(){
+      var v=document.getElementById('pw-input').value;
+      if(v==='zxcvbnm789(0.'){sessionStorage.setItem('lp_auth','1');document.getElementById('pw-gate').classList.add('hidden');}
+      else{document.getElementById('pw-error').style.display='block';document.getElementById('pw-input').value='';}
+    }
+  </script>
 
   <!-- ① NAV -->
   <nav id="site-nav">
